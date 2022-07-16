@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+--orange-color:hsl(26, 100%, 55%);
+--pale-orange:hsl(25, 100%, 94%);
+--very-dark-blue: hsl(220, 13%, 13%);
+--dark-grayish-blue: hsl(219, 9%, 45%);
+--grayish-blue: hsl(220, 14%, 75%);
+--light-grayish-blue: hsl(223, 64%, 98%);
+}
+
+body{
+margin:0;
+
+}
+
+
+#banner{
+display:flex;
+justify-content: space-between;
+padding:1em;
+background:white;
+height:20px;
+}
+ #menu{
+width:10px;
+
+}
+
+#menu1,#menu2,#menu3{
+width: 15px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+transition:0.5s;
+}
+
+#banner > #flex1{
+display:flex;
+
+ }
+
+#banner > #flex2{
+display:flex;
+
+}
+
+
+#banner > #flex1 > #sneakers-logo{
+width:100px;
+margin-left:1em;
+margin-top:-0.1em;
+}
+
+#banner > #cart{
+margin-top:-0.1em;
+}
+
+#banner > #flex2 > img{
+width:25px;
+margin-left:1em;
+}
+
+/*navigation bar */
+ 
+nav{
+background:white;
+width:60%;
+height:100vh;
+position:absolute;
+margin-top:-3.2rem;
+transition:all 0.4s ease;
+
+}
+
+nav > #menu-cancel{
+width:10px;
+margin:1em;
+
+}
+
+#menu-cancel1 , #menu-cancel2 {
+width: 15px;
+  height: 2px;
+  background-color: grey;
+  margin: 3px 0;
+transition:0.5s;
+}
+
+#menu-cancel1{
+transform:rotate(45deg) translate(3px,3.5px);
+}
+
+#menu-cancel2{
+transform:rotate(-45deg);
+}
+
+nav > ul{
+list-style:none;
+margin-left:-2em;
+margin-top:2.7em;
+}
+
+nav > ul > li{
+padding:5px;
+
+}
+
+nav > ul > li > a{
+text-decoration:none;
+color:black;
+font-weight:700;
+font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.hide{
+opacity:0;
+visibility:hidden;
+}
+
+/* Shoe picture */
+
+#box1{
+background-image:url("images/icon1.jpg");
+background-size:100% 100%;
+width:100%;
+min-height:20em; 
+display:flex;
+justify-content: Space-between;
+align-items:center;
+transition: all 0.4s ease;
+}
+
+#box1 > #previous{
+background-color:white;
+margin-left:0.7em;
+width:40px;
+height:40px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+#box1 > #next{
+background-color:white;
+margin-right:0.7em;
+width:40px;
+height:40px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Styling for box2 */
+
+#box2{
+  margin:1.2em;
+}
+#box2 > h1{
+  font-size: 0.8em;
+  color:var(--orange-color);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+#box2 > h2{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight:700;
+  margin-top: -0.1em;
+}
+
+#box2 > p{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight:700;
+  margin-top: -0.5em;
+  font-size: 15px;
+  line-height: 1.5;
+  color:var(--dark-grayish-blue);
+}
