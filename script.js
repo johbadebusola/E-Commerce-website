@@ -39,8 +39,11 @@ count = 0;
 }
 sliderPics.style.background = `url("images/${image[count]}.jpg") center/100% 100%`;
 }
-
-
-
 })
+})
+
+//Counter
+let plus = document.querySelector("#plus")
+plus.addEventListener("click", e =>{
+  
 })
