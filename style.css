@@ -234,3 +234,25 @@ justify-content: space-between;
   margin-top: 1.4em;
   margin-right: 1.3em;
 }
+
+
+@media (min-width:684px){
+  #box1{
+    min-height: 25em;
+  }
+}
+
+@media (min-width:908px){
+#grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  /* justify-content: center;
+  align-items: center; */
+  /* min-height: 100vh; */
+  margin: 5em;
+  grid-gap: 8em;
+}
+#box1{
+  min-height: 20em;
+}
+}

@@ -43,7 +43,20 @@ sliderPics.style.background = `url("images/${image[count]}.jpg") center/100% 100
 })
 
 //Counter
-let plus = document.querySelector("#plus")
+let plus = document.querySelector("#plus");
+let minus = document.querySelector("#minus");
+let countOutput = document.querySelector("#count-output")
+let counts = 0;
+// for increment of number
 plus.addEventListener("click", e =>{
-  
+  counts += 1;
+countOutput.innerHTML = counts;
 })
+//for decrement of numbers
+minus.addEventListener("click", e =>{
+    counts -= 1;
+    if (counts < 0){
+        return;
+    }
+  countOutput.innerHTML = counts;
+  })
