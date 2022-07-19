@@ -56,7 +56,32 @@ countOutput.innerHTML = counts;
 minus.addEventListener("click", e =>{
     counts -= 1;
     if (counts < 0){
-        return;
+        return ;
     }
   countOutput.innerHTML = counts;
+  })
+
+  // clicking of thumbnail
+  let thumbnail1 = document.querySelector("#thumbnail1");
+  let thumbnail2 = document.querySelector("#thumbnail2");
+  let thumbnail3 = document.querySelector("#thumbnail3");
+  let thumbnail4 = document.querySelector("#thumbnail4");
+  let carousel = document.querySelector("#couresel");
+
+
+  thumbnail1.addEventListener("click", e =>{
+    
+    carousel.style.background = "url(images/icon1.jpg) center/100% 100% ";
+  })
+  thumbnail2.addEventListener("click",  e =>{
+
+    carousel.style.background = "url(images/icon2.jpg) center/100% 100%";
+  })
+  thumbnail3.addEventListener("click",  e =>{
+
+    carousel.style.background = "url(images/icon3.jpg) center/100% 100%";
+  })
+  thumbnail4.addEventListener("click",  e =>{
+
+    carousel.style.background = "url(images/icon4.jpg) center/100% 100%";
   })
