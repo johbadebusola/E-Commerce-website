@@ -85,3 +85,9 @@ minus.addEventListener("click", e =>{
 
     carousel.style.background = "url(images/icon4.jpg) center/100% 100%";
   })
+
+
+
+
+
+
